@@ -21,10 +21,10 @@
  * @return
  */
 int main (int argc, char* argv[]) {
-    int sockfd;
+    int sockfd = 0;
 
     SSL_CTX *ctx;
-    SSL_METHOD *method;
+    const SSL_METHOD *method;
     SSL *ssl;
 
     struct addrinfo *result, *rp;
